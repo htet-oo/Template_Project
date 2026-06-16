@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date and Time</title>
+</head>
+<body>
+	<h1>This is copyright yeras @ <span id='autoyear'>2021</span></h1>
+	<script type="text/javascript">
+		let date=new Date();
+		console.log(date);
+
+		// let getdate=new Date().getDate();
+		// document.write("This is my tody date"+getdate+"<br/>");
+
+
+		let getdate=date.getDate();
+		document.write("This is my tody date"+getdate+"<br/>");
+
+		let hour=date.getHours();
+		document.write("This is current hour"+hour+"<br/>");
+
+		let minute=date.getMinutes();
+		document.write("This is current minute"+minute+"<br/>");
+
+		let second=date.getSeconds();
+		document.write("This is current second"+second+"<br/>");
+
+		let time=date.getTime();
+		document.write("This is time"+time+"<br/>");
+		let now=Date.now();
+		document.write("This is now "+now+"<br/>");
+
+		// return index number January is 0/Dec is 11
+		let month=date.getMonth();
+		document.write("This is month="+month+"<br/>");
+
+		let day=date.getDay();
+		document.write("This is day="+day+"<br/>");
+
+		let year=date.getFullYear();
+		document.write("This is year"+year+"<br/>");
+
+		let utcyear=date.getUTCFullYear();
+		document.write("This is year"+utcyear+"<br/>");
+
+		document.getElementById("autoyear").innerText=year;
+
+		let birthday=new Date('8-10-2003');
+		    birthday=new Date('9/10/2003');
+		    birthday=new Date("Aug 10 2003 11:25");
+		    birthday=new Date("August 10 2003 11:25");
+		console.log(birthday);
+
+		birthday.setMonth(2);
+		birthday.setDate(12);
+		birthday.setFullYear(2020);
+		birthday.setHours(15);
+		birthday.setMinutes(30);
+		birthday.setSeconds(50);
+		console.log(birthday);
+	</script>
+</body>
+</html>

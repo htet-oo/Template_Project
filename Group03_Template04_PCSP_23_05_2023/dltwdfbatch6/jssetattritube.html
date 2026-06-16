@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set Attritube</title>
+</head>
+<body>
+	<div>
+		<h1 style="text-align: center;">Say something</h1>
+		<p class="p1">Hey fuck you.Your mama hates you bitch</p>
+		<p class="p2">Hey you little bitch</p>
+	</div>
+	<script type="text/javascript">
+		// console.log(document.getElementsByTagName('h1'));
+		// console.log(document.getElementsByTagName('p'));
+
+		let geth1tag=document.getElementsByTagName('h1');
+		let getptag=document.getElementsByTagName('p');
+
+		geth1tag[0].textContent='My Story';
+		getptag[1].innerText='hay i am working';
+
+		geth1tag[0].setAttribute('style','text-align:center;');
+		getptag[1].setAttribute('style','background-color:grey;color:#fff;padding:3px;border:2px solid green;');
+		console.log(getptag[1].getAttribute('style'));
+		console.log(getptag[0].getAttribute('class'));	
+
+		getptag[1].removeAttribute('style');
+		getptag[0].removeAttribute('class');
+	</script>	
+</body>
+</html>

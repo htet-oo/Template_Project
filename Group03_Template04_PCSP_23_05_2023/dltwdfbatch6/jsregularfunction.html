@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Function</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items:center;
+
+			margin: 0;
+			overflow: hidden;
+		}
+		.box{
+			width: 300px;
+			background-color: #f4f4f4;
+			padding: 10px;
+			box-shadow: 2px 2px 5px rgb(0, 0, 0,0.3);
+		}
+		label{
+			display: block;
+			margin-bottom: 10px;
+		}
+		.form-control{
+			width: 100%;
+			display: block;
+			padding: 5px;
+			margin-bottom: 10px;
+		}
+		.but{
+			width: 100%;
+			font-size: 16px;
+			color: #fff;
+			background-color: darkblue;
+			border: none;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body id="body">
+	<div class="box">
+		<h3>Show Name =<span id="replacename">Test</span></h3>
+		<label for="firstname">Firstname</label>
+		<input type="text" name="firstname" id="firstname" class="form-control" autocomplete="off" autofocus/>
+
+		<label for="lastname">Lastname</label>
+		<input type="text" name="lastname" id="lastname" class="form-control" autocomplete="off" autofocus/>
+
+		<button type="button" onclick="getdata()" class="but">Get name</button>
+	</div>
+
+	<script type="text/javascript">
+		//Function
+
+		// function name(){
+		// 	code to be executed
+		// }
+		//name();
+
+		// 1.Regular function
+		//  (i)manual function
+		//  (ii)parameter function
+		// 2.Arrow function
+		//  (i)manual function
+		//  (ii)parameter function 
+
+		//Regualr function
+			//manual function
+
+			function greet(){
+				console.log("Hello Myanmar");
+				console.log("Hello Thiland");
+				console.log("Hello Indonesia");
+			};
+
+			greet();
+
+			// function hello(){
+			// 	console.log("Hello Mandalay");
+
+			// };
+
+			// hello();
+
+			// function hello(){
+			// 	console.log("Hello Taiwan");
+			// };
+
+			// function hello(){
+			// 	window.alert("Hello Yangon");
+			// 	window.alert("Hello Mandaly");
+			// 	window.alert("Hello Bago");
+			// };
+			// hello();
+
+			// function hello(){
+			// 	document.write("Hello Yangon");
+			//  document.write("Hello Mandaly");
+			// 	document.write("Hello Bago");
+			// };
+			// hello();
+
+			function funone(){
+				console.log('I am function one');
+			};
+			function funtwo(){
+				funone();
+				console.log('I am function two');
+				funthree();
+			};
+			function funthree(){
+				console.log('I am function three')
+			}
+			funtwo();
+// _______________________________________________
+
+		//RETURN
+
+		function funfour(){
+			console.log(4);
+		};
+		function funfive(){
+			console.log(5);
+		};
+		function funsix(){
+			// funfour();
+			// funfive();
+
+			const num1= funfour();
+			const num2= funfive();
+			console.log(num1);
+			console.log(num2);
+
+			const total =num1+num2;
+			console.log(total);
+
+
+		};
+		funsix();
+
+		function funseven(){
+			return 7;
+		};
+		console.log(funseven());
+
+		function funeight(){
+			return 8;
+		};
+
+		console.log(funeight());
+
+		function funnine(){
+			const num1= funseven();
+			const num2= funeight();
+
+			var total = num1 + num2;
+			console.log(total);
+
+			// return num1+num2;
+			return total;
+		};
+
+		console.log(funnine());
+
+		function test(){
+			var total = 100+200;
+			return "heee heee";
+		};
+// __________________________________________
+
+		//parameter function
+
+		// (i)single parameter function
+
+			function myfun1(city){
+				// console.log("Hello"+city);
+				console.log(`Hello ${city}`);
+			};
+			myfun1("Mandalay");
+			myfun1("Yangon");
+			myfun1();
+
+			//Default parameter function
+			function myfun2(city="Bla"){
+				console.log(`Hello ${city}`);
+			};
+			myfun2("Yangon");
+			myfun2();
+		// (ii)multiparameter function
+
+			function multifun1(x,y){
+				console.log(`X value is ${x} , Y value is ${y}`);
+			};
+
+			multifun1(10,6);
+			
+			function multifun2(x,y,z){
+				let result=x+y+z;
+				return result;
+			};
+			console.log(multifun2(10,20,30));
+//___________________________________________
+
+			//Constructor function (string structure)
+
+			const confunone=new Function("f","s","t","return Total = f+s+t");
+
+			console.log(confunone(10,20));
+			console.log(confunone(10,20,30));
+			console.log(typeof confunone(10,20,30));
+			console.log(confunone("10","20","30"));
+			console.log(typeof confunone("10","20","30"));
+
+			console.log(confunone("aung aung","maung maung","kyaw kyaw"));
+//_________________________________________
+			//Nameless Function (Anonymous Function);
+
+			let annfunone=function(name,color){
+				console.log(`My name is ${name}. I love ${color} color.`);
+			};
+			annfunone("aung aung","black");
+//___________________________________________
+
+			//Self Invoking Function
+			(function (){
+				console.log("Save Myanmar");
+			})();
+
+			(function(name){
+				console.log(`My name is ${name}`);
+			})('tun tun');
+
+//___________________________________________			
+
+function getdata(){
+	// const getfirstname=document.getElementById("firstname").value;
+	// const getlastname=document.getElementById("lastname").value;
+	// // console.log(getfirstname,getlastname);
+	// 
+
+	// getreplacename.innerText=`${getfirstname} ${getlastname}`;
+	// // getreplacename.textContent=`${getfirstname} ${getlastname}`;
+
+	// // document.getElementById("replacename").innerText=`${getfirstname} ${getlastname}`;
+
+	// document.getElementById("firstname").value="";
+	// document.getElementById("lastname").value="";
+
+	// document.getElementById("firstname").focus();
+
+	const getfirstname=document.getElementById("firstname");
+	const getlastname=document.getElementById("lastname");
+
+	const getreplacename=document.getElementById("replacename");
+	getreplacename.textContent=`${getfirstname.value} ${getlastname.value}`;
+
+	getfirstname.value="";
+	getlastname.value="";
+
+	getfirstname.focus();
+
+
+};
+
+
+	</script>
+</body>
+</html>

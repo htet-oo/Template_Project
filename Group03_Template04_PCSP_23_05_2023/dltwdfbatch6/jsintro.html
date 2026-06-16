@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Intro</title>
+</head>
+<body>
+	<p>What's up!</p>
+	<hr/><br/>
+	<b id="text">I hate my life</b>
+	<hr/><br/>
+	<img src="./img/cover/amazing.jpg" id="funny" alt="haha"/>
+	<br/><br/>
+	<button onclick="document.getElementById('funny').src='./img/cover/amazing.jpg'">Amazing</button>
+	<button onclick="document.getElementById('funny').src='./img/cover/blah.jpg'">Blah Blah</button>
+	<button onclick="document.getElementById('funny').src='./img/cover/shame.jpg'">Shame</button>
+	<script type="text/javascript">
+		console.log('aung aung');
+		console.log("kyaw kyaw");
+		console.log(`zaw zaw`)
+
+		console.log(500);
+		console.log('600');
+		console.log('700');
+		console.log(`800`);
+
+		console.log('aung aung',"zaw zaw",'maung maung');
+		console.log(200,3,455,3343);
+		console.log('kyaw kyaw',233,'wah wah',.400);
+
+		console.log(10+20);
+		console.log(10+'40');
+		console.log('10'+"40");
+		console.log('aung aung'+20);
+
+		console.log(true);
+		console.log(false);
+		console.log(true+40);
+		console.log(false+40);
+		console.log('kyaw kyaw'+true);
+		console.log('zaw zaw'+ false);
+
+		// window.alert("Welcome to");
+		// window.alert('monster world');
+		// alert("Don't even thin about to leave");
+
+		// comment
+		// single line comment
+
+		/*multi line comment*/
+
+		// variable(const / var / let)
+
+		const me = 'Htet Oo Wai Yan';
+		console.log(me);
+		alert(me);
+		console.log('My name is ' + me);
+
+
+		// overwrite(const can't overwrite)(var and let can overwrite)
+		let num3='30';
+		const num4=20;
+		console.log("num3 value is " + num3);
+		console.log(num4);
+		console.log(num3+num4);
+
+		num3=50;
+		let num5=40;
+		console.log("num3 value is " + num3);
+		console.log(num5);
+		console.log(num3+num5);
+
+		// let num6=100;
+		// num6=200;
+		// console.log(num6);
+
+		// var num6=100;
+		// num6=200;
+		// console.log(num6);
+		
+		// const num6=100;
+		// num6=200;
+		// console.log(num6);
+
+		// concatenate(+)
+		const name1='mg mg ';
+		const name2='kyaw ';
+		console.log(name1+name2+' is my friend.')
+
+		let greeting='hello ';
+		let city1=' Mandalay ';
+		let city2=' Yangon ';
+		console.log(greeting+city1+'and'+city2);
+		console.log(`${greeting} ${city1} and ${city2}`);
+
+		document.write('<hr/>');
+		document.write(`${greeting} ${city1} and ${city2}`);
+		document.write("<hr/>");
+		document.write('hello myanmar');
+		document.write(`<hr/>`);
+
+		// special escape characters(\)
+
+		let myfather="he\'s my father";
+		let mymother='she\'s my \@ mother';
+		console.log(myfather);
+		console.log(mymother);
+
+		let x='It\s U Ba\'';
+		let y="poem.";
+		let z="He\'s my \"Uncle\".";
+		document.write(`${x} ${y} ${z}`);
+
+		document.getElementById('text').innerText="But not much";
+		document.getElementById('text').textContent="Actually a lots";
+		document.getElementById('text').innerHTML='but a little'; /*not same with innerText and innerHTML*/
+
+	</script>
+</body>
+</html>
+<!-- multi word
+var firstname="kyaw"//Camel case
+var first_name="kyaw"//Underscore
+var FIrstName="kyaw"//Pascal case -->

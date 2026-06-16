@@ -1,0 +1,52 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');*/
+/*.p{
+	font-family: Arial,Century,'Times New Roman';
+}*/
+/*.p{
+	font-family: 'Stick',sans-serif	;
+}
+.p1{
+	font-family: 'Akaya Kanadaka' , sans-serif;
+}
+*/
+@font-face{
+	font-family: 'Stick';
+	src:local('Stick-Regular'),url(../libs/fonts/stick/Stick-Regular.ttf);
+}
+@font-face{
+	font-family: akaya;
+	src: local('AkayaTelivigala-Regular'),url(../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf);
+}
+.p{
+	font-family: Stick;
+}
+.p1{
+	font-family: akaya;
+}
+.p3{
+	font-family: Arial,Century;
+	font-weight: 900;
+	font-style: italic;
+	text-transform: uppercase;
+	text-transform: capitalize;
+	font-variant: small-caps;
+	text-indent: 50px;
+}
+.a1{
+	text-decoration: none;
+}
+.menutext{
+	font-family: Cambria;
+	text-decoration: none;
+	background-color: green;
+	color: #fff;
+}
+.imgdesign{
+	width: 80px;
+	height: 80px;
+	transition: all 1s;
+}
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+}

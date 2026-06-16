@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template String</title>
+</head>
+<body>
+	<ul>
+		<li>name: aung aung</li>
+		<li>age: 25</li>
+		<li>job: web developer</li>
+		<li>city: mandalay</li>
+	</ul>
+	<script type="text/javascript">
+		const name='kyaw kyaw';
+		const age=23;
+		const job='Web developer';
+		const city='mandalay';
+		let myliststyle; // oki
+		// var myliststyle; // oki
+		// const myliststyle; //error
+
+		// without template
+		myliststyle="<ul><li>" + name + "</li><li>age:"+ age +"</li><li>job:"+ job +"</li><li>city:"+ city +"</li></ul>";
+
+		myliststyle="<ul>"+
+		"<li>name:" + name + "</li>"+
+		"<li>age:"+ age +"</li>"+
+		"<li>job:"+ job +"</li>"+
+		"<li>city:"+ city +"</li>"
+		+"</ul>";
+		document.write(myliststyle)
+
+		// with template string
+
+		myliststyle=`
+		<ul>
+		<li>name: ${name}</li>
+		<li>age: ${age}</li>
+		<li>job: ${job}</li>
+		<li>city: ${city}</li>
+		</ul>
+		`;
+		document.write(myliststyle);
+	</script>
+</body>
+</html>

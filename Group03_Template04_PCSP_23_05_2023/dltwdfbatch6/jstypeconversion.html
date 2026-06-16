@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Type Conversion</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let val;
+		
+		//to string
+		val = "aung aung";
+
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+		//Number to String
+
+		val ="20";
+		val ='20';
+		val =`20`;
+
+		val = "20+20";
+		console	.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+		val1="20";
+		val2="20";
+		val=val1+val2;
+		console.log(val);
+		console.log(val.length);
+
+		val=String(20+20);
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+		//Bool to String
+		val =true;
+		val =String(val);
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+		//Date to string
+		val =new Date();
+		val=String(new Date());
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+		//Array to string
+		val="[1,2,3,4,5]";
+		val=String(val);
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+
+		// toString =().toString();
+		val =new Date().toString();
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+// ________________________________________________________
+
+		val ="20";
+		// val=Number(val);
+		val = +"20";
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.toFixed(5));
+		console.log(val.length);
+
+		val = +"aung aung";//NaN not a number
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+
+		val=123.456897;//same with Math.round();
+		console.log(val);
+		console.log(val.toFixed(2));
+
+		val = "50.454";
+		val = parseInt(val); //same with Math.floor()
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.toFixed(5));
+		console.log(val.length);
+
+		val = "50.454";
+		val = parseFloat(val);
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.toFixed(5));
+		console.log(val.length);
+
+
+		//boolean to Number
+		val = false;//true=1
+		val = Number(val);
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);
+//_____________________________________________________
+
+		//	TO Array
+		val = "aung tun tun";//not array character array
+		val = Array.from(val);
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);	
+
+		//can't convert numbr,boolean,and others
+		val = array.from(20);
+		val = Array.from(true);
+		val = {
+			music:"rock",
+			sport:"basketball"
+		};
+		console.log(val);
+		console.log(typeof val);
+		console.log(val.length);s			
+	</script>
+</body>
+</html>

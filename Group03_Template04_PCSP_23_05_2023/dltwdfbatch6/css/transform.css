@@ -1,0 +1,64 @@
+:root{
+	--oc: orange;
+	--gn: #10a15b;
+	--vi: rgba(191,55,127,1.00);
+}
+.div1{
+	width: 200px;
+	height: 80px;
+	background-color: var(--gn);
+	transform: translate(50%);
+}
+.div2{
+	width: 200px;
+	height: 80px;
+	background-color: var(--oc);
+	transform: scale(0.5);
+}
+.div3{
+	width: 200px;
+	height: 80px;
+	background-color: var(--vi);
+	transform: rotate(30deg);
+}
+.div4{
+	width: 200px;
+	height: 80px;
+	background-color: var(--gn);
+	transform: skew(-50deg);
+}
+.div5{
+	width: 200px;
+	height: 80px;
+	background-color: var(--vi);
+}
+.country{
+	font-size: 20px;
+
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	padding: 10px 25px 10px 25px;
+	background-image: url('../img/cover/arrow.png');
+	background-size: 15px;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position-x: 90%;
+}
+h1{
+	text-align: center;
+}
+p{
+	text-align: center;
+	color: green;
+}
+@media(max-width: 600px){
+	h1{
+		font-size: 23px;
+		color: blue;
+	}
+	p{
+		color: red;
+	}
+}

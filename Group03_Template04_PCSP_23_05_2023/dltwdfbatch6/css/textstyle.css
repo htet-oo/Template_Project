@@ -1,0 +1,14 @@
+.textalign{
+	text-align:justify;
+}
+.textdecoration{
+	text-decoration:overline;
+}
+.textline{
+	letter-spacing:10px;
+	line-height:100%;
+}
+.textshadow{
+	text-shadow:-10px -10px 10px yellow;
+	text-shadow:+10px +10px 10px #bf42f5;
+}

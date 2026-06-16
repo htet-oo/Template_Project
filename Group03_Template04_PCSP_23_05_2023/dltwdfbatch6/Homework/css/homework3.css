@@ -1,0 +1,65 @@
+body{
+	background-image: url('../img/background.jpg');
+}
+		.p1{
+			color: #fff;
+			text-align: center;
+			font-size: 40px;
+			margin-top: 20px;
+			text-shadow: -8px -2px 4px black;
+}
+		fieldset{
+			height: 370px;
+		}
+		legend{
+			text-align: right;
+			color: yellow;
+		}
+		@font-face{
+			font-family: 'stick';
+			src: local('Stick-Regular'),url('../font/Stick/Stick-Regular.ttf');
+		}
+		.studentid{
+			font-family: stick;
+			color: yellow;
+			text-align: right;
+
+		}
+		.form{
+			width: 330px;
+			height: 250px;
+			background-color: rgba(211,211,211,0.6);
+			border: 2px dotted white;
+			margin-left: 37%;
+		}
+		.login{
+			text-align: center;
+			color: #fff;
+			text-shadow: -2px -2px 4px black;
+		}
+		div{
+			text-align: center;
+		}
+		.span1{
+			color: white;
+			text-shadow: -3px -2px 2px black;
+		}
+		.span2{
+			color: white;
+			text-shadow: -3px -2px 2px black;
+		}
+		.password{
+			margin-top: 2px;
+			margin-left: 4px;
+		}
+		.cancel{
+			margin-top: 4px;
+			margin-left: 41%;
+		}
+		.paragraph{
+			margin-top: 10px;
+		}
+		.lorem{
+			display: inline;
+			margin-top: ;
+		}

@@ -1,0 +1,13 @@
+.paragraph::first-line{
+	color: pink;
+}
+.paragraph::before{
+	content: "abc";
+}
+/*.paragraph::first-letter{
+	color: green;
+}
+.paragraph::selection{
+	background-color: green;
+	color: white;
+}*/

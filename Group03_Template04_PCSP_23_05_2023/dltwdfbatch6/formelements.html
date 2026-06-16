@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Form Elements</title>
+</head>
+<body>
+	<fieldset>
+		<legend>This is sample form &copy;</legend>
+<form action="" method="" enctype="multipart/form-data">
+	<h1>Form Tags</h1>
+	<label for="firstname">First Name</label>
+	<input type="text" name="firstname" id="firstname" class="" placeholder="Enter your first name" maxlength="10" autofocus readonly />
+	<br/>
+	<label for="lastname">Last Name</label>
+	<input type="text" name="lastname" id="lastname" class=""
+	placeholder="Enter your lastname" maxlength="10" disabled/>
+	<br/>
+	<label for="password">Password</label>
+	<input type="password" name="password" id="password" class="" placeholder="Enter your password" readonly/>
+	<br/>
+	<label for="age">Age</label>
+	<input type="number" name="age" id="age" class="" placeholder="Enter your age" min="0" max="999"/>
+	<br/>
+	<label for="age1">Age1</label>
+	<input type="number" name="age1" id="age1" class="" placeholder="Enter your age" min="0" max="999"/>
+	<br/>
+	<label for="email">Email</label>
+	<input type="email" name="email" id="email" class="" placeholder="Enter your email" required/>
+	<br/>
+	<label>Gender</label>
+	<input type="radio" name="gender" id="genderm" class="" vale="1"/><label for="genderm">Male</label>
+	<input type="radio" name="gender" id="genderf" class="" vale="0"/><label for="genderf">Female</label>
+	<input type="radio" name="gender" id="gendero" class="" vale="2"/><label for="gendero">Other</label>
+	<br/>
+	<label>Salary</label>
+	<input type="radio" name="salary" id="salaryc" class="" value="0"/><label for="salaryc">Cash</label>
+	<input type="radio" name="salary" id="salarym" class="" value="1"/><label for="salarym">Mobile Money</label>
+	<br/>
+	<label>Choose your color</label>
+	<input type="checkbox" name="color" id="colorred" class="" value="1"/><label for="colorred">Red</label>
+	<input type="checkbox" name="color" id="colorblack" class="" value="2"/><label for="colorblack">Black</label>
+	<input type="checkbox" name="color" id="colorgreen" class="" value="3"/><label for="colorgreen">Green</label>
+	<input type="checkbox" name="color" id="coloryellow" class="" value="2"/><label for="coloryellow">Yellow</label>
+	<br/>
+	<label for="country">Citizen</label>
+	<select name="country" id="country"  class="">
+		<option >Choose your country<option>
+		<option value="0" selected disabled>Myanmar</option>
+		<option value="1" >Thiland</option>
+		<option value="2">Srilandka</option>
+		<option value="3">Indonesia</option>
+		<option value="4">Laos</option>
+    </select>
+    <br/>
+    <label for="role">Role</label>
+    <select name="role" id="role" class="" multiple>
+    	<option>Manager</option>
+    	<option>Editor</option>
+    	<option>Sales</option>
+    </select>
+    <br/>
+    <label for="DOB">DOB</label>
+    <input type="date" name="dob" id="dob" class=""/>
+    <br/>
+    <label for="bt">Booking Time</label>
+    <input type="time" name="bt" id="bt" class=""/>
+    <br/>
+    <label for="datetime">Date Time</label>
+    <input type="datetime-local" name="datetime" id="datetime" class=""/>
+    <br/>
+    <label for="range">Range</label>
+    <input type="range" name="range" id="range" min="0" max="100" value="0" step="10">
+    <br/>
+    <label for="bio">Bio</label>
+    <textarea name="bio" id="bio" class="" rows="2"></textarea>
+    <br/>
+    <label for="nrc">NRC</label>
+    <input type="file" name="nrc" id="nrc" class="" multiple />
+    <br/>
+    <input type="hidden" name="test" id="test" class=""/>
+    <br/> <br/>
+    <input type="reset" name="cancle" id="cancle" class=""/>
+    <input type="submit" name="register" id="register" class=""/>
+    <button type="submit" name="login" id="login" class="">Login</button>
+</form>
+</fieldset>
+</body>
+</html>

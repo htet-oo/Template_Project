@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ari Operator</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// var greeting; //ok
+		let greeting; //ok
+		// const greeting; //not ok
+		console.log(greeting);
+
+		// Group Variables Declaration
+		// let num1,num2,num3; //can
+		// let num1=100,num2=200,num3=300;
+		// var num1,num2,num3; //can
+
+		// let num1=100,num2=20,num3=30; //can't
+		let num1=100,
+		num2=20,
+		num3=30;
+
+		console.log(num2);
+        document.write("Adding Resut ="+(num1+num2)+"<br/>");
+        document.write("Substration Result ="+(num1-num2)+"<br/>");
+        document.write("Multiplication Result ="+(num1/num2)+"<br/>");
+        document.write("Division Result ="+(num1%num2)+"<br/>");
+
+        // document.write("Increment Result After ="+(num1++)+"<br/>"); //after
+        // document.write("Increment Result After ="+(num1++)+"<br/>");
+        // document.write("Increment Result After ="+(num1)+"<br/>");
+        // document.write("Increment Result After="+(num1++)+"<br/>");
+        // document.write("Increment Result After="+(num1++)+"<br/>");
+        // document.write("Increment Result After="+(num1)+"<br/>");
+
+        // document.write("Increment Result Before="+(++num1)+"<br/>");
+        // document.write("Increment Result Before="+(++num1)+"<br/>");
+        // document.write("Increment Result Before="+(num1)+"<br/>");
+        // document.write("Increment Result Before="+(++num1)+"<br/>");
+        // document.write("Increment Result Before="+(num1)+"<br/>");
+
+        document.write("Decement Result After"+(num1--)+"<br/>");
+        document.write("Decement Result After"+(num1--)+"<br/>");
+        document.write("Decement Result After"+(num1)+"<br/>");
+        document.write("Decement Result After"+(num1--)+"<br/>");
+        document.write("Decement Result After"+(num1)+"<br/>");
+
+        // const num5=200;
+        // document.write("Num5 result"+(num+1)+"<br/>");//it's ok
+        // document.write("Num5 result"+(num++)+"<br/>");// it isn't ok because it is overwrite and const can't be overwrited
+
+        let msg=prompt("Write Something");
+        console.log(msg);
+        console.log(typeof msg);
+        document.write(msg);
+
+	</script>
+</body>
+</html>
+<!-- Arithmethic Operators
++ adding
+- substration
+* multiplication
+/ division
+% modulus(remainder)
+++(increment)
+--(decrement) -->

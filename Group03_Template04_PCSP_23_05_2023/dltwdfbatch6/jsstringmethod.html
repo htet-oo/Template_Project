@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Method</title>
+</head>
+<body>
+	<div>
+		<h1 id="mm">Myanmar</h1>
+		<h1 id="th">Thiland</h1>
+	</div>
+	<script type="text/javascript">
+		//string method
+		let val="maung maung";
+		let vl="kyaw";
+		console.log(val.length);
+
+		let nm=val + vl;
+		console.log(nm);
+
+		//append
+		val+= vl;
+		console.log(val);
+
+		//concat()
+		var firstname ="Zayar";
+		var lastname="Kyaw";
+		var fullname=firstname+lastname;
+		console.log(fullname);
+		console.log(firstname.concat(lastname));
+
+		//character array
+		console.log(fullname[6]);
+		console.log(fullname[fullname.length-1]);
+
+		//charAt(only in string)
+		console.log(fullname.charAt(4));
+		console.log(fullname.charAt(fullname.length-1));
+
+		//includes(case sense)
+		let fav="My fav color is black color";
+		console.log(fav);
+		console.log(fav.includes("black"));//result true
+		console.log(fav.includes("red"));//result false
+		console.log(fav.includes("Black"));//result false
+		console.log(fav.includes("bla"));//result true
+
+		//replace(old,new);
+		console.log(fav.replace("black","blue"));
+		console.log(fav.replace("bla","red"));
+		console.log(fav.replace("color","paper"));
+
+		//substring(index,length);
+		console.log(fav.substring(0,6).concat("..."));
+
+		//change case
+		console.log(fav.toUpperCase());
+		console.log(fav.toLowerCase());
+
+		//style
+		let abc =document.getElementById("mm");
+		document.getElementById("mm").style.color="green";
+		document.getElementById("mm").style.fontSize="50px";
+		console.log(abc);
+
+		document.getElementById("th");
+		document.getElementById("th").style.color="green";
+		document.getElementById("th").style.fontSize="50px";
+
+	</script>
+</body>
+</html>
