@@ -67,6 +67,10 @@ Through this project, I practiced:
 
 ![Contact](GitPhoto/Contactpage.png)
 
+## Live Demo
+
+[View Live Website](https://htet-oo.github.io/Template_Project/)
+
 ## Future Improvements
 
 - Add an online ordering system
