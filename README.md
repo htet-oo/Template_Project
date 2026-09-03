@@ -1,6 +1,6 @@
 # Comida — Responsive Restaurant Website
 
-A responsive restaurant website developed using HTML, CSS, and JavaScript.
+A responsive multi-page restaurant website developed using HTML, CSS, and JavaScript.
 
 ## Overview
 
