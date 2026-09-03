@@ -1,19 +1,33 @@
-# Comida Restaurant Website
+# Comida — Responsive Restaurant Website
 
-A responsive restaurant website built with HTML, CSS, and JavaScript.
+A responsive restaurant website developed using HTML, CSS, and JavaScript.
+
+## Overview
+
+Comida is a multi-page restaurant website designed to provide a simple and user-friendly experience for customers.
+
+The website supports desktop, tablet, and mobile screen sizes and includes restaurant information, menu browsing, branch information, and a contact page.
 
 ## Features
 
-- Responsive desktop, tablet, and mobile layouts
-- Restaurant home page
-- About Us page
-- Menu and menu details
-- Branch information
+- Responsive design for desktop, tablet, and mobile
+- Responsive navigation menu
+- Restaurant menu browsing
+- Menu detail page
+- Image sliders
+- Menu category navigation
+- Restaurant branch information
 - Contact page
-- Mobile navigation menu
-- Slick sliders and image carousels
-- Menu category tabs
-- Custom fonts and responsive styling
+- Interactive UI components
+
+## Pages
+
+- Home
+- About Us
+- Our Menu
+- Menu Details
+- Our Branches
+- Contact Us
 
 ## Technologies
 
@@ -23,24 +37,31 @@ A responsive restaurant website built with HTML, CSS, and JavaScript.
 - jQuery
 - Slick Carousel
 
-## Project Structure
+## What I Learned
 
-```text
-Template_Project/
-├── index.html
-├── aboutus.html
-├── branches.html
-├── contactus.html
-├── menu.html
-├── menu_detail.html
-├── css/
-├── js/
-├── fonts/
-├── img/
-├── .gitignore
-└── README.md
-```
+Through this project, I practiced:
 
-## Purpose
+- Building multi-page websites with HTML
+- Creating responsive layouts with CSS
+- Using JavaScript for interactive features
+- Implementing image sliders with Slick Carousel
+- Organizing frontend project files
+- Designing layouts for different screen sizes
+- Managing a project using Git and GitHub
 
-This project demonstrates frontend development skills including responsive design, page structure, reusable styling, JavaScript interactions, and third-party JavaScript library integration.
+## Screenshots
+
+Screenshots of the website will be added here.
+
+## Future Improvements
+
+- Add an online ordering system
+- Add customer authentication
+- Connect the website to a backend API
+- Add database integration
+- Improve accessibility
+- Deploy the website as a live web application
+
+## Author
+
+HTET OO WAI YAN
