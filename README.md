@@ -51,7 +51,19 @@ Through this project, I practiced:
 
 ## Screenshots
 
-Screenshots of the website will be added here.
+## Screenshots
+
+### Home
+![Home](GitPhoto/Homepage.png)
+
+### Menu
+![Menu](GitPhoto/Menupage.png)
+
+### Branches
+![Branches](GitPhoto/Branchepage.png)
+
+### Contact
+![Contact](GitPhoto/Contactpage.png)
 
 ## Future Improvements
 
