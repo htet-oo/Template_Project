@@ -78,7 +78,7 @@ Through this project, I practiced:
 - Connect the website to a backend API
 - Add database integration
 - Improve accessibility
-- Deploy the website as a live web application
+- Add additional interactive features
 
 ## Author
 
